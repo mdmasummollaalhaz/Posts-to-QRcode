@@ -52,5 +52,22 @@ function pqrc_display_qr_code($content){
 add_filter('the_content', 'pqrc_display_qr_code');
 
 
+/* Theme - function.php
+
+// QR code
+function twenty_exclude_qrcode_post_types($post_types){
+	$post_types[] = 'page';
+	// array_push($post_types, 'page')
+	return $post_types;
+}
+add_filter('pqrc_excluded_post_types', 'twenty_exclude_qrcode_post_types' );
+
+// Dimension
+function twenty_qrcode_dimension($dimension){
+	return '100x100';
+}
+add_filter('pqrc_qrcode_dimension', 'twenty_qrcode_dimension');
+*/
+
 
 ?>
