@@ -20,6 +20,8 @@ function qrcode_activation_hook(){
 function qrcode_deactivation_hook(){
     register_deactivation_hook(__FILE__, "qrcode_deactivation_hook")
 }
+
+QR code maker - https://goqr.me/qr-codes/type-qr-url.html
 */
 
 
